@@ -1,0 +1,43 @@
+{
+  "talents": [
+    {
+      "id": 1,
+      "name": "James Wilson",
+      "title": "Senior Product Manager",
+      "location": "San Francisco, USA",
+      "experience": 12,
+      "skills": ["Product Strategy", "Leadership", "Agile"],
+      "match": 94,
+      "photo": "https://randomuser.me/api/portraits/men/32.jpg",
+      "verifications": ["identity", "education", "experience"]
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Product Manager",
+      "company": "TechCorp",
+      "location": "San Francisco, USA",
+      "type": "Full Time",
+      "experience": "8–12 Years",
+      "salary": "$150k – $200k"
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "TechCorp",
+      "location": "San Francisco, USA",
+      "openJobs": 24,
+      "logo": "https://placehold.co/80x80/0A2647/ffffff?text=TC",
+      "color": "#0A2647"
+    }
+  ],
+  "homepage": {
+    "headline": "Global Talent Intelligence",
+    "subtitle": "Discover top talent, find your next opportunity, and build careers anywhere in the world.",
+    "statTalents": "120K+",
+    "statCompanies": "25K",
+    "statJobs": "87K"
+  }
+}

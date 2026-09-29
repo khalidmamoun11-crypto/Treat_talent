@@ -4,17 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Treat Talents · Global Talent Intelligence</title>
-  <!-- Font Awesome 6 (free) -->
+  <meta name="description" content="Discover top talent, find your next opportunity, and build careers anywhere in the world.">
+  <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts: Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <style>
-    /* ---------- RESET & VARIABLES ---------- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
       --primary: #0A2647;
@@ -27,7 +23,6 @@
       --white: #ffffff;
       --gray: #4A5568;
       --gray-light: #E2E8F0;
-      --gray-bg: #F8FAFC;
       --success: #38A169;
       --danger: #E53E3E;
       --radius-sm: 12px;
@@ -48,19 +43,9 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    .section {
-      padding: 72px 0;
-    }
-
-    .bg-white {
-      background: var(--white);
-    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 72px 0; }
+    .bg-white { background: var(--white); }
 
     .section-title {
       font-size: 2rem;
@@ -72,10 +57,7 @@
       gap: 12px;
       flex-wrap: wrap;
     }
-
-    .section-title i {
-      color: var(--secondary);
-    }
+    .section-title i { color: var(--secondary); }
 
     .badge-tag {
       background: var(--accent);
@@ -109,22 +91,16 @@
 
     .btn-primary { background: var(--primary); color: white; }
     .btn-primary:hover { background: var(--primary-light); transform: translateY(-3px); }
-
     .btn-secondary { background: var(--secondary); color: white; }
     .btn-secondary:hover { background: var(--secondary-light); transform: translateY(-3px); }
-
     .btn-outline { background: transparent; border: 2px solid var(--primary); color: var(--primary); }
     .btn-outline:hover { background: var(--primary); color: white; }
-
     .btn-accent { background: var(--accent); color: #1A202C; }
     .btn-accent:hover { background: var(--accent-dark); transform: translateY(-3px); }
-
     .btn-danger { background: var(--danger); color: white; }
     .btn-danger:hover { background: #C53030; transform: translateY(-3px); }
-
     .btn-success { background: var(--success); color: white; }
     .btn-success:hover { background: #2F855A; transform: translateY(-3px); }
-
     .btn-sm { padding: 8px 18px; font-size: 0.85rem; }
     .btn-block { width: 100%; }
 
@@ -157,7 +133,6 @@
       gap: 8px;
       cursor: pointer;
     }
-
     .logo i { color: var(--accent); font-size: 2rem; }
     .logo span { color: var(--secondary); }
 
@@ -202,23 +177,6 @@
       cursor: pointer;
     }
 
-    .admin-toggle {
-      background: var(--accent);
-      color: var(--primary);
-      padding: 8px 20px;
-      border-radius: 60px;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: var(--transition);
-    }
-
-    .admin-toggle:hover { transform: scale(1.05); }
-
     /* ---------- PAGE SECTIONS ---------- */
     .page-section { display: none; }
     .page-section.active { display: block; }
@@ -260,7 +218,6 @@
       letter-spacing: -1.5px;
       line-height: 1.1;
     }
-
     .hero h1 i { color: var(--accent); }
 
     .hero p {
@@ -270,18 +227,9 @@
       max-width: 520px;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
-    .hero-stats {
-      display: flex;
-      gap: 36px;
-      margin-top: 36px;
-    }
-
+    .hero-stats { display: flex; gap: 36px; margin-top: 36px; }
     .hero-stats div { text-align: center; }
     .hero-stats strong { font-size: 2.2rem; display: block; color: var(--accent); }
     .hero-stats span { opacity: 0.7; font-size: 0.9rem; }
@@ -333,11 +281,7 @@
       border: 1px solid rgba(0, 0, 0, 0.02);
     }
 
-    .quick-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-    }
-
+    .quick-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
     .quick-card i { font-size: 2.4rem; color: var(--secondary); margin-bottom: 8px; }
     .quick-card h4 { font-weight: 600; }
     .quick-card p { font-size: 0.85rem; color: var(--gray); margin-bottom: 12px; }
@@ -360,17 +304,9 @@
       flex-direction: column;
     }
 
-    .talent-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-    }
+    .talent-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 
-    .talent-header {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 14px;
-    }
+    .talent-header { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
 
     .talent-avatar {
       width: 72px;
@@ -382,11 +318,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 
-    .talent-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .talent-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
     .talent-name { font-weight: 700; font-size: 1.15rem; display: flex; align-items: center; gap: 6px; }
     .talent-title { color: var(--gray); font-size: 0.9rem; }
@@ -400,12 +332,7 @@
       margin-top: 4px;
     }
 
-    .talent-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 14px 0;
-    }
+    .talent-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0; }
 
     .talent-tags span {
       background: var(--light);
@@ -425,12 +352,7 @@
       white-space: nowrap;
     }
 
-    .verification-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin: 12px 0 0 0;
-    }
+    .verification-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 0 0; }
 
     .verification-list span {
       background: #E6FFFA;
@@ -463,10 +385,7 @@
       border: 1px solid rgba(0, 0, 0, 0.02);
     }
 
-    .company-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-    }
+    .company-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 
     .company-logo {
       width: 80px;
@@ -483,11 +402,7 @@
       overflow: hidden;
     }
 
-    .company-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .company-logo img { width: 100%; height: 100%; object-fit: cover; }
 
     /* ---------- JOB LIST ---------- */
     .job-list { display: flex; flex-direction: column; gap: 16px; }
@@ -570,117 +485,9 @@
       background: white;
     }
 
-    /* ---------- ADMIN PANEL ---------- */
-    .admin-panel {
-      display: none;
-      background: white;
-      padding: 32px;
-      border-radius: var(--radius-md);
-      margin: 32px 0;
-      box-shadow: var(--shadow-lg);
-      border: 3px solid var(--accent);
-    }
-
-    .admin-panel.active { display: block; }
-    .admin-panel h2 {
-      color: var(--primary);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .admin-panel .subtitle { color: var(--gray); margin-bottom: 24px; }
-
-    .form-group { margin-bottom: 16px; }
-    .form-group label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: var(--primary);
-      font-size: 0.9rem;
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-      width: 100%;
-      padding: 10px 14px;
-      border: 2px solid var(--gray-light);
-      border-radius: var(--radius-sm);
-      font-size: 0.95rem;
-      transition: var(--transition);
-      font-family: inherit;
-    }
-
-    .form-group input:focus,
-    .form-group select:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--secondary);
-      box-shadow: 0 0 0 4px rgba(44, 122, 123, 0.1);
-    }
-
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-
-    .items-list { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
-
-    .item-card {
-      background: var(--light);
-      border-radius: var(--radius-sm);
-      padding: 14px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      transition: var(--transition);
-      border-left: 4px solid var(--secondary);
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .item-card:hover { transform: translateX(4px); box-shadow: var(--shadow-sm); }
-    .item-card .item-info { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
-    .item-card .item-info .avatar-small {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      overflow: hidden;
-      flex-shrink: 0;
-      background: var(--primary);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      font-size: 0.8rem;
-    }
-
-    .item-card .item-info .avatar-small img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .item-card .item-info .item-title { font-weight: 600; }
-    .item-card .item-info .item-sub { color: var(--gray); font-size: 0.8rem; }
-    .item-card .item-actions { display: flex; gap: 6px; }
-    .item-card .item-actions .btn { padding: 4px 12px; font-size: 0.75rem; }
-
-    .empty-state {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--gray);
-    }
-
-    .empty-state i {
-      font-size: 2.5rem;
-      color: var(--gray-light);
-      margin-bottom: 12px;
-    }
+    /* ---------- EMPTY STATE ---------- */
+    .empty-state { text-align: center; padding: 40px 20px; color: var(--gray); }
+    .empty-state i { font-size: 2.5rem; color: var(--gray-light); margin-bottom: 12px; }
 
     /* ---------- TOAST ---------- */
     .toast {
@@ -702,6 +509,7 @@
 
     .toast.error { background: var(--danger); }
     .toast.show { display: flex; }
+
     @keyframes slideIn {
       from { transform: translateX(100%); opacity: 0; }
       to { transform: translateX(0); opacity: 1; }
@@ -764,6 +572,38 @@
 
     .modal-close:hover { background: var(--light); color: var(--danger); }
 
+    /* ---------- FORM ELEMENTS ---------- */
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 4px;
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 2px solid var(--gray-light);
+      border-radius: var(--radius-sm);
+      font-size: 0.95rem;
+      transition: var(--transition);
+      font-family: inherit;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 4px rgba(44, 122, 123, 0.1);
+    }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
     /* ---------- FOOTER ---------- */
     .footer {
       background: var(--primary);
@@ -822,7 +662,6 @@
         gap: 14px;
         align-items: stretch;
       }
-
       .nav-links.open { display: flex; }
       .hamburger { display: block; }
       .filter-bar { border-radius: var(--radius-md); padding: 16px; }
@@ -848,7 +687,7 @@
   <!-- ========== TOAST ========== -->
   <div id="toast" class="toast">
     <i class="fas fa-check-circle"></i>
-    <span id="toastMessage">Changes saved!</span>
+    <span id="toastMessage">Message sent!</span>
   </div>
 
   <!-- ========== MODAL ========== -->
@@ -870,102 +709,10 @@
         <li><a href="#" data-page="recruitment" onclick="navigateTo('recruitment'); return false;">Recruitment</a></li>
         <li><a href="#" data-page="career" onclick="navigateTo('career'); return false;">Career</a></li>
         <li><a href="#" data-page="about" onclick="navigateTo('about'); return false;">About</a></li>
-        <li><button class="admin-toggle" onclick="toggleAdmin()"><i class="fas fa-cog"></i> Admin</button></li>
       </ul>
       <button class="hamburger" id="hamburgerBtn"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
-
-  <!-- ========== ADMIN PANEL ========== -->
-  <div class="container">
-    <div id="adminPanel" class="admin-panel">
-      <h2><i class="fas fa-cog"></i> Admin Panel</h2>
-      <p class="subtitle">Manage content — changes save automatically to localStorage.</p>
-
-      <div class="stats-grid" style="margin-bottom: 24px;">
-        <div class="stat-box"><h3 id="statTotalTalents">0</h3><p>Total Talents</p></div>
-        <div class="stat-box"><h3 id="statTotalJobs">0</h3><p>Total Jobs</p></div>
-      </div>
-
-      <!-- Add Talent -->
-      <div style="background: var(--light); padding: 20px; border-radius: var(--radius-sm); margin-bottom: 24px;">
-        <h4 style="margin-bottom: 12px;"><i class="fas fa-user-plus"></i> Add New Talent</h4>
-        <div class="form-row">
-          <div class="form-group"><label>Full Name *</label><input type="text" id="talentName" placeholder="John Smith"></div>
-          <div class="form-group"><label>Job Title *</label><input type="text" id="talentTitle" placeholder="Senior Manager"></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>Location</label><input type="text" id="talentLocation" placeholder="New York, USA"></div>
-          <div class="form-group"><label>Experience (Years)</label><input type="number" id="talentExperience" placeholder="12"></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>Skills (comma separated)</label><input type="text" id="talentSkills" placeholder="Product Strategy, Leadership"></div>
-          <div class="form-group"><label>Match Score (%)</label><input type="number" id="talentMatch" placeholder="94" min="0" max="100"></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>Photo URL</label><input type="text" id="talentPhoto" placeholder="https://..."></div>
-          <div class="form-group"><label>Verifications</label>
-            <select id="talentVerifications">
-              <option value="identity">Identity Only</option>
-              <option value="identity,education">Identity + Education</option>
-              <option value="identity,education,experience">Identity + Education + Experience</option>
-              <option value="identity,education,experience,cert">All Verified</option>
-            </select>
-          </div>
-        </div>
-        <button onclick="addTalent()" class="btn btn-primary"><i class="fas fa-save"></i> Add Talent</button>
-      </div>
-
-      <h4>Current Talents</h4>
-      <div id="talentsList" class="items-list"></div>
-
-      <!-- Add Job -->
-      <div style="background: var(--light); padding: 20px; border-radius: var(--radius-sm); margin: 24px 0;">
-        <h4 style="margin-bottom: 12px;"><i class="fas fa-plus-circle"></i> Add New Job</h4>
-        <div class="form-row">
-          <div class="form-group"><label>Job Title *</label><input type="text" id="jobTitle" placeholder="Product Manager"></div>
-          <div class="form-group"><label>Company Name *</label><input type="text" id="jobCompany" placeholder="TechCorp"></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>Location</label><input type="text" id="jobLocation" placeholder="London, UK"></div>
-          <div class="form-group"><label>Employment Type</label>
-            <select id="jobType"><option>Full Time</option><option>Part Time</option><option>Contract</option><option>Remote</option></select>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>Experience</label><input type="text" id="jobExperience" placeholder="5–8 Years"></div>
-          <div class="form-group"><label>Salary</label><input type="text" id="jobSalary" placeholder="$80k – $120k"></div>
-        </div>
-        <button onclick="addJob()" class="btn btn-secondary"><i class="fas fa-save"></i> Add Job</button>
-      </div>
-
-      <h4>Current Jobs</h4>
-      <div id="jobsList" class="items-list"></div>
-
-      <!-- Homepage Settings -->
-      <div style="background: var(--light); padding: 20px; border-radius: var(--radius-sm); margin: 24px 0;">
-        <h4 style="margin-bottom: 12px;"><i class="fas fa-home"></i> Homepage Settings</h4>
-        <div class="form-group"><label>Hero Headline</label><input type="text" id="heroHeadline" placeholder="Global Talent Intelligence"></div>
-        <div class="form-group"><label>Hero Subtitle</label><input type="text" id="heroSubtitle" placeholder="Discover top talent..."></div>
-        <div class="form-row">
-          <div class="form-group"><label>Talents Stat</label><input type="text" id="statTalents" placeholder="120K+"></div>
-          <div class="form-group"><label>Companies Stat</label><input type="text" id="statCompanies" placeholder="25K"></div>
-          <div class="form-group"><label>Jobs Stat</label><input type="text" id="statJobs" placeholder="87K"></div>
-        </div>
-        <button onclick="saveHomepage()" class="btn btn-accent"><i class="fas fa-save"></i> Save</button>
-        <button onclick="resetAll()" class="btn btn-danger" style="margin-left: 10px;"><i class="fas fa-trash"></i> Reset All</button>
-      </div>
-
-      <div style="background: var(--light); padding: 20px; border-radius: var(--radius-sm);">
-        <h4 style="margin-bottom: 12px;"><i class="fas fa-database"></i> Data Management</h4>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <button onclick="exportData()" class="btn btn-secondary btn-sm"><i class="fas fa-download"></i> Export JSON</button>
-          <button onclick="document.getElementById('importFile').click()" class="btn btn-outline btn-sm"><i class="fas fa-upload"></i> Import JSON</button>
-          <input type="file" id="importFile" accept=".json" style="display: none;" onchange="importData(event)">
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- ============================================================ -->
   <!-- HOME PAGE -->
@@ -1059,10 +806,21 @@
             <option>Australia</option>
             <option>India</option>
             <option>Singapore</option>
+            <option>Japan</option>
             <option>Brazil</option>
           </select>
-          <select id="talentFilterExperience" onchange="filterTalents()"><option value="">Experience</option><option value="5-10">5-10 Years</option><option value="10+">10+ Years</option></select>
-          <select id="talentFilterIndustry" onchange="filterTalents()"><option value="">Industry</option><option>Technology</option><option>Healthcare</option><option>Finance</option><option>Marketing</option></select>
+          <select id="talentFilterExperience" onchange="filterTalents()">
+            <option value="">Experience</option>
+            <option value="5-10">5-10 Years</option>
+            <option value="10+">10+ Years</option>
+          </select>
+          <select id="talentFilterIndustry" onchange="filterTalents()">
+            <option value="">Industry</option>
+            <option>Technology</option>
+            <option>Healthcare</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+          </select>
           <button class="btn btn-primary btn-sm" onclick="filterTalents()">Search</button>
         </div>
         <div class="talent-grid" id="talentsGrid"></div>
@@ -1082,10 +840,10 @@
       <div class="container">
         <div class="section-title"><i class="fas fa-tachometer-alt"></i> Employer Dashboard</div>
         <div class="stats-grid" style="margin-bottom: 32px;">
-          <div class="stat-box"><h3 id="dashActiveJobs">124</h3><p>Active Jobs</p></div>
-          <div class="stat-box"><h3 id="dashApplications">1,348</h3><p>Applications</p></div>
-          <div class="stat-box"><h3 id="dashShortlisted">256</h3><p>Shortlisted</p></div>
-          <div class="stat-box"><h3 id="dashNewTalents">1,128</h3><p>New Talents</p></div>
+          <div class="stat-box"><h3>124</h3><p>Active Jobs</p></div>
+          <div class="stat-box"><h3>1,348</h3><p>Applications</p></div>
+          <div class="stat-box"><h3>256</h3><p>Shortlisted</p></div>
+          <div class="stat-box"><h3>1,128</h3><p>New Talents</p></div>
         </div>
         <div style="background: white; padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
           <h4 style="margin-bottom: 16px;">Recent Applications</h4>
@@ -1131,8 +889,15 @@
             <option>Australia</option>
             <option>India</option>
             <option>Singapore</option>
+            <option>Japan</option>
           </select>
-          <select id="jobFilterType" onchange="filterJobs()"><option value="">Employment Type</option><option>Full Time</option><option>Part Time</option><option>Contract</option><option>Remote</option></select>
+          <select id="jobFilterType" onchange="filterJobs()">
+            <option value="">Employment Type</option>
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Contract</option>
+            <option>Remote</option>
+          </select>
           <button class="btn btn-primary btn-sm" onclick="filterJobs()">Search</button>
           <button class="btn btn-accent btn-sm" onclick="openPostJobModal()"><i class="fas fa-plus"></i> Post a Job</button>
         </div>
@@ -1160,8 +925,14 @@
             <option>Australia</option>
             <option>India</option>
             <option>Singapore</option>
+            <option>Japan</option>
+            <option>Brazil</option>
           </select>
-          <select id="allTalentFilterExperience" onchange="filterAllTalents()"><option value="">Experience</option><option value="5-10">5-10 Years</option><option value="10+">10+ Years</option></select>
+          <select id="allTalentFilterExperience" onchange="filterAllTalents()">
+            <option value="">Experience</option>
+            <option value="5-10">5-10 Years</option>
+            <option value="10+">10+ Years</option>
+          </select>
           <button class="btn btn-primary btn-sm" onclick="filterAllTalents()">Search</button>
         </div>
         <div class="talent-grid" id="allTalentsGrid"></div>
@@ -1262,18 +1033,12 @@
 
   <script>
     // ============================================================
-    // DATA
+    // GLOBAL TALENT INTELLIGENCE - PUBLIC READ-ONLY SITE
     // ============================================================
+
     let talents = [];
     let jobs = [];
-    let companies = [
-      { id: 1, name: 'TechCorp', location: 'San Francisco, USA', openJobs: 24, logo: 'https://placehold.co/80x80/0A2647/ffffff?text=TC', color: '#0A2647' },
-      { id: 2, name: 'Global Finance', location: 'London, UK', openJobs: 18, logo: 'https://placehold.co/80x80/2C7A7B/ffffff?text=GF', color: '#2C7A7B' },
-      { id: 3, name: 'Innovate Labs', location: 'Berlin, Germany', openJobs: 12, logo: 'https://placehold.co/80x80/E6B91E/0A2647?text=IL', color: '#E6B91E' },
-      { id: 4, name: 'Asia Pacific Group', location: 'Singapore', openJobs: 20, logo: 'https://placehold.co/80x80/553C9A/ffffff?text=AP', color: '#553C9A' },
-      { id: 5, name: 'Southern Cross', location: 'Sydney, Australia', openJobs: 15, logo: 'https://placehold.co/80x80/22543D/ffffff?text=SC', color: '#22543D' },
-      { id: 6, name: 'North Star Health', location: 'Toronto, Canada', openJobs: 9, logo: 'https://placehold.co/80x80/C53030/ffffff?text=NS', color: '#C53030' }
-    ];
+    let companies = [];
     let homepageSettings = {
       headline: 'Global Talent Intelligence',
       subtitle: 'Discover top talent, find your next opportunity, and build careers anywhere in the world.',
@@ -1283,7 +1048,29 @@
     };
 
     // ============================================================
-    // SAMPLE DATA — 3 talents + 3 jobs (global)
+    // LOAD DATA FROM data.json (uploaded to GitHub)
+    // ============================================================
+    async function loadDataFromJSON() {
+      try {
+        const response = await fetch('data.json?v=' + Date.now()); // cache-bust
+        if (!response.ok) throw new Error('No data.json');
+        const data = await response.json();
+
+        talents = data.talents || [];
+        jobs = data.jobs || [];
+        companies = data.companies || companies;
+        if (data.homepage) homepageSettings = data.homepage;
+
+        renderAll();
+        console.log('✅ Data loaded from data.json');
+      } catch (err) {
+        console.warn('⚠️ Could not load data.json — using sample data');
+        loadSampleData();
+      }
+    }
+
+    // ============================================================
+    // SAMPLE FALLBACK DATA
     // ============================================================
     function loadSampleData() {
       talents = [
@@ -1328,29 +1115,16 @@
         { id: 3, title: 'Lead UX Designer', company: 'Innovate Labs', location: 'Berlin, Germany', type: 'Remote', experience: '8+ Years', salary: '€90k – €120k' }
       ];
 
-      saveData();
+      companies = [
+        { id: 1, name: 'TechCorp', location: 'San Francisco, USA', openJobs: 24, logo: 'https://placehold.co/80x80/0A2647/ffffff?text=TC', color: '#0A2647' },
+        { id: 2, name: 'Global Finance', location: 'London, UK', openJobs: 18, logo: 'https://placehold.co/80x80/2C7A7B/ffffff?text=GF', color: '#2C7A7B' },
+        { id: 3, name: 'Innovate Labs', location: 'Berlin, Germany', openJobs: 12, logo: 'https://placehold.co/80x80/E6B91E/0A2647?text=IL', color: '#E6B91E' },
+        { id: 4, name: 'Asia Pacific Group', location: 'Singapore', openJobs: 20, logo: 'https://placehold.co/80x80/553C9A/ffffff?text=AP', color: '#553C9A' },
+        { id: 5, name: 'Southern Cross', location: 'Sydney, Australia', openJobs: 15, logo: 'https://placehold.co/80x80/22543D/ffffff?text=SC', color: '#22543D' },
+        { id: 6, name: 'North Star Health', location: 'Toronto, Canada', openJobs: 9, logo: 'https://placehold.co/80x80/C53030/ffffff?text=NS', color: '#C53030' }
+      ];
+
       renderAll();
-    }
-
-    // ============================================================
-    // LOCAL STORAGE
-    // ============================================================
-    function saveData() {
-      localStorage.setItem('treatTalentsData', JSON.stringify({ talents, jobs, homepage: homepageSettings }));
-    }
-
-    function loadData() {
-      const stored = localStorage.getItem('treatTalentsData');
-      if (stored) {
-        try {
-          const data = JSON.parse(stored);
-          talents = data.talents || [];
-          jobs = data.jobs || [];
-          homepageSettings = data.homepage || homepageSettings;
-          return true;
-        } catch (e) { return false; }
-      }
-      return false;
     }
 
     // ============================================================
@@ -1366,7 +1140,6 @@
       if (activeLink) activeLink.classList.add('active');
 
       document.getElementById('navLinks').classList.remove('open');
-      document.getElementById('adminPanel').classList.remove('active');
       window.scrollTo({ top: 0, behavior: 'smooth' });
 
       if (page === 'jobs') renderAllJobs();
@@ -1446,95 +1219,34 @@
     function renderCompanies() {
       const grid = document.getElementById('companiesGrid');
       if (!grid) return;
+      if (!companies.length) {
+        grid.innerHTML = `<div class="empty-state"><i class="fas fa-building"></i><p>No companies yet.</p></div>`;
+        return;
+      }
       grid.innerHTML = companies.map(c => `
         <div class="company-card">
-          <div class="company-logo" style="background: ${c.color};">
-            <img src="${c.logo}" alt="${c.name}" onerror="this.style.display='none'; this.parentElement.textContent='${getInitials(c.name)}';">
+          <div class="company-logo" style="background: ${c.color || '#0A2647'};">
+            ${c.logo ? `<img src="${c.logo}" alt="${c.name}" onerror="this.style.display='none'; this.parentElement.textContent='${getInitials(c.name)}';">` : getInitials(c.name)}
           </div>
           <h4>${c.name}</h4>
           <p style="color: var(--gray); font-size: 0.9rem;">${c.location}</p>
-          <span class="badge-tag" style="margin-top: 8px;">${c.openJobs} Open Jobs</span>
+          <span class="badge-tag" style="margin-top: 8px;">${c.openJobs || 0} Open Jobs</span>
         </div>
       `).join('');
     }
 
     function renderTalents() {
-      const container = document.getElementById('talentsList');
-      if (container) {
-        if (!talents.length) {
-          container.innerHTML = `<div class="empty-state"><i class="fas fa-users"></i><p>No talents added yet.</p></div>`;
-        } else {
-          container.innerHTML = talents.map(t => `
-            <div class="item-card">
-              <div class="item-info">
-                <div class="avatar-small">
-                  <img src="${getPhoto(t)}" alt="${t.name}" onerror="this.style.display='none'; this.parentElement.textContent='${getInitials(t.name)}';">
-                </div>
-                <div>
-                  <div class="item-title">${t.name}</div>
-                  <div class="item-sub">${t.title} · ${t.location} · ${t.experience}yrs</div>
-                  <div style="display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap;">
-                    ${(t.skills || []).map(s => `<span class="badge-tag" style="background: var(--secondary); color: white; font-size: 0.6rem;">${s}</span>`).join('')}
-                    <span class="badge-tag" style="background: var(--primary); color: white; font-size: 0.6rem;">${t.match}%</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item-actions">
-                <button onclick="deleteTalent(${t.id})" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-              </div>
-            </div>
-          `).join('');
-        }
-      }
-
       renderTalentGrid('talentsGrid', talents);
       renderTalentGrid('allTalentsGrid', talents);
-
-      const stat = document.getElementById('statTotalTalents');
-      if (stat) stat.textContent = talents.length;
     }
 
     function renderJobs() {
-      const container = document.getElementById('jobsList');
-      if (container) {
-        if (!jobs.length) {
-          container.innerHTML = `<div class="empty-state"><i class="fas fa-briefcase"></i><p>No jobs added yet.</p></div>`;
-        } else {
-          container.innerHTML = jobs.map(j => `
-            <div class="item-card">
-              <div class="item-info">
-                <div>
-                  <div class="item-title">${j.title}</div>
-                  <div class="item-sub">${j.company} · ${j.location}</div>
-                  <div style="display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap;">
-                    <span class="badge-tag" style="background: var(--secondary); color: white; font-size: 0.6rem;">${j.type}</span>
-                    <span class="badge-tag" style="font-size: 0.6rem;">${j.experience}</span>
-                    <span class="badge-tag" style="background: var(--primary); color: white; font-size: 0.6rem;">${j.salary}</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item-actions">
-                <button onclick="deleteJob(${j.id})" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
-              </div>
-            </div>
-          `).join('');
-        }
-      }
-
       renderJobList('jobsListDisplay', jobs);
       renderAllJobs();
-
-      const stat = document.getElementById('statTotalJobs');
-      if (stat) stat.textContent = jobs.length;
     }
 
-    function renderAllJobs() {
-      renderJobList('allJobsList', jobs);
-    }
-
-    function renderAllTalents() {
-      renderTalentGrid('allTalentsGrid', talents);
-    }
+    function renderAllJobs() { renderJobList('allJobsList', jobs); }
+    function renderAllTalents() { renderTalentGrid('allTalentsGrid', talents); }
 
     function renderHomepage() {
       const hh = document.getElementById('heroHeadlineDisplay');
@@ -1547,12 +1259,6 @@
       if (sc) sc.textContent = homepageSettings.statCompanies;
       const sj = document.getElementById('statJobsDisplay');
       if (sj) sj.textContent = homepageSettings.statJobs;
-
-      document.getElementById('heroHeadline').value = homepageSettings.headline;
-      document.getElementById('heroSubtitle').value = homepageSettings.subtitle;
-      document.getElementById('statTalents').value = homepageSettings.statTalents;
-      document.getElementById('statCompanies').value = homepageSettings.statCompanies;
-      document.getElementById('statJobs').value = homepageSettings.statJobs;
     }
 
     function renderAll() {
@@ -1624,156 +1330,7 @@
     }
 
     // ============================================================
-    // ADMIN FUNCTIONS
-    // ============================================================
-    function toggleAdmin() {
-      document.getElementById('adminPanel').classList.toggle('active');
-      renderAll();
-    }
-
-    // ============================================================
-    // TALENT CRUD
-    // ============================================================
-    function addTalent() {
-      const name = document.getElementById('talentName').value.trim();
-      const title = document.getElementById('talentTitle').value.trim();
-      if (!name || !title) { showToast('Please fill in Name and Title', 'error'); return; }
-
-      talents.push({
-        id: Date.now(),
-        name,
-        title,
-        location: document.getElementById('talentLocation').value.trim() || 'Global',
-        experience: parseInt(document.getElementById('talentExperience').value) || 0,
-        skills: document.getElementById('talentSkills').value.split(',').map(s => s.trim()).filter(s => s),
-        match: parseInt(document.getElementById('talentMatch').value) || 0,
-        photo: document.getElementById('talentPhoto').value.trim() || '',
-        verifications: document.getElementById('talentVerifications').value.split(',')
-      });
-
-      saveData();
-      renderAll();
-      clearTalentForm();
-      showToast(`✅ "${name}" added!`);
-    }
-
-    function deleteTalent(id) {
-      if (confirm('Remove this talent?')) {
-        talents = talents.filter(t => t.id !== id);
-        saveData();
-        renderAll();
-        showToast('Talent removed');
-      }
-    }
-
-    function clearTalentForm() {
-      ['talentName','talentTitle','talentLocation','talentExperience','talentSkills','talentMatch','talentPhoto'].forEach(id => document.getElementById(id).value = '');
-    }
-
-    // ============================================================
-    // JOB CRUD
-    // ============================================================
-    function addJob() {
-      const title = document.getElementById('jobTitle').value.trim();
-      const company = document.getElementById('jobCompany').value.trim();
-      if (!title || !company) { showToast('Please fill in Job Title and Company', 'error'); return; }
-
-      jobs.push({
-        id: Date.now(),
-        title,
-        company,
-        location: document.getElementById('jobLocation').value.trim() || 'Global',
-        type: document.getElementById('jobType').value,
-        experience: document.getElementById('jobExperience').value.trim() || 'N/A',
-        salary: document.getElementById('jobSalary').value.trim() || 'Competitive'
-      });
-
-      saveData();
-      renderAll();
-      clearJobForm();
-      showToast(`✅ "${title}" added!`);
-    }
-
-    function deleteJob(id) {
-      if (confirm('Remove this job?')) {
-        jobs = jobs.filter(j => j.id !== id);
-        saveData();
-        renderAll();
-        showToast('Job removed');
-      }
-    }
-
-    function clearJobForm() {
-      ['jobTitle','jobCompany','jobLocation','jobExperience','jobSalary'].forEach(id => document.getElementById(id).value = '');
-      document.getElementById('jobType').value = 'Full Time';
-    }
-
-    // ============================================================
-    // HOMEPAGE SETTINGS
-    // ============================================================
-    function saveHomepage() {
-      homepageSettings.headline = document.getElementById('heroHeadline').value || 'Global Talent Intelligence';
-      homepageSettings.subtitle = document.getElementById('heroSubtitle').value || 'Discover top talent...';
-      homepageSettings.statTalents = document.getElementById('statTalents').value || '120K+';
-      homepageSettings.statCompanies = document.getElementById('statCompanies').value || '25K';
-      homepageSettings.statJobs = document.getElementById('statJobs').value || '87K';
-
-      saveData();
-      renderAll();
-      showToast('✅ Homepage updated!');
-    }
-
-    // ============================================================
-    // DATA MANAGEMENT
-    // ============================================================
-    function exportData() {
-      const data = { talents, jobs, homepage: homepageSettings, exportedAt: new Date().toISOString() };
-      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `treat-talents-backup-${new Date().toISOString().split('T')[0]}.json`;
-      a.click();
-      URL.revokeObjectURL(url);
-      showToast('📦 Data exported!');
-    }
-
-    function importData(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        try {
-          const data = JSON.parse(e.target.result);
-          talents = data.talents || [];
-          jobs = data.jobs || [];
-          homepageSettings = data.homepage || homepageSettings;
-          saveData();
-          renderAll();
-          showToast('✅ Data imported!');
-        } catch (err) {
-          showToast('❌ Invalid file format', 'error');
-        }
-      };
-      reader.readAsText(file);
-      document.getElementById('importFile').value = '';
-    }
-
-    function resetAll() {
-      if (confirm('⚠️ Delete ALL data? This cannot be undone!')) {
-        if (confirm('Really? All talents, jobs, and settings will be permanently deleted.')) {
-          talents = [];
-          jobs = [];
-          homepageSettings = { headline: 'Global Talent Intelligence', subtitle: 'Discover top talent, find your next opportunity, and build careers anywhere in the world.', statTalents: '120K+', statCompanies: '25K', statJobs: '87K' };
-          saveData();
-          renderAll();
-          showToast('🗑️ All data reset!');
-        }
-      }
-    }
-
-    // ============================================================
-    // MODALS
+    // MODALS (public-facing)
     // ============================================================
     function openModal(html) {
       document.getElementById('modalContent').innerHTML = html;
@@ -1811,7 +1368,7 @@
         </div>
         <div style="display: flex; gap: 12px; flex-wrap: wrap;">
           <button class="btn btn-primary" onclick="closeModal(); showToast('📩 Contact request sent to ${t.name}');"><i class="fas fa-envelope"></i> Contact</button>
-          <button class="btn btn-secondary" onclick="closeModal(); showToast('📄 Resume downloaded');"><i class="fas fa-download"></i> Download CV</button>
+          <button class="btn btn-secondary" onclick="closeModal(); showToast('📄 Resume download started');"><i class="fas fa-download"></i> Download CV</button>
           <button class="btn btn-outline" onclick="closeModal();">Close</button>
         </div>
       `);
@@ -1841,40 +1398,16 @@
           <h3><i class="fas fa-briefcase"></i> Post a Job</h3>
           <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
         </div>
-        <div class="form-group"><label>Job Title *</label><input type="text" id="modalJobTitle" placeholder="e.g., Product Manager"></div>
-        <div class="form-group"><label>Company *</label><input type="text" id="modalJobCompany" placeholder="e.g., TechCorp"></div>
-        <div class="form-row">
-          <div class="form-group"><label>Location</label><input type="text" id="modalJobLocation" placeholder="San Francisco, USA"></div>
-          <div class="form-group"><label>Type</label><select id="modalJobType"><option>Full Time</option><option>Part Time</option><option>Contract</option><option>Remote</option></select></div>
-        </div>
-        <div class="form-row">
-          <div class="form-group"><label>Experience</label><input type="text" id="modalJobExp" placeholder="5–8 Years"></div>
-          <div class="form-group"><label>Salary</label><input type="text" id="modalJobSalary" placeholder="$80k – $120k"></div>
-        </div>
+        <p style="color: var(--gray); margin-bottom: 16px;">Tell us about the role — we'll be in touch to publish it.</p>
+        <div class="form-group"><label>Job Title</label><input type="text" placeholder="Position title"></div>
+        <div class="form-group"><label>Company</label><input type="text" placeholder="Company name"></div>
+        <div class="form-group"><label>Email</label><input type="email" placeholder="you@company.com"></div>
+        <div class="form-group"><label>Location</label><input type="text" placeholder="City, Country"></div>
         <div style="display: flex; gap: 12px;">
-          <button class="btn btn-primary" onclick="submitModalJob()"><i class="fas fa-check"></i> Post Job</button>
+          <button class="btn btn-primary" onclick="closeModal(); showToast('📩 Request sent! We will contact you.');"><i class="fas fa-check"></i> Submit Request</button>
           <button class="btn btn-outline" onclick="closeModal();">Cancel</button>
         </div>
       `);
-    }
-
-    function submitModalJob() {
-      const title = document.getElementById('modalJobTitle').value.trim();
-      const company = document.getElementById('modalJobCompany').value.trim();
-      if (!title || !company) { showToast('Please fill in Job Title and Company', 'error'); return; }
-      jobs.push({
-        id: Date.now(),
-        title,
-        company,
-        location: document.getElementById('modalJobLocation').value.trim() || 'Global',
-        type: document.getElementById('modalJobType').value,
-        experience: document.getElementById('modalJobExp').value.trim() || 'N/A',
-        salary: document.getElementById('modalJobSalary').value.trim() || 'Competitive'
-      });
-      saveData();
-      renderAll();
-      closeModal();
-      showToast(`✅ "${title}" posted!`);
     }
 
     function openApplicantModal(name, role, match) {
@@ -1969,15 +1502,9 @@
     // ============================================================
     // INIT
     // ============================================================
-    if (!loadData()) {
-      loadSampleData();
-    } else {
-      renderAll();
-    }
+    loadDataFromJSON();
 
-    console.log('✅ Treat Talents Loaded — Global Edition!');
-    console.log(`📊 ${talents.length} talents, ${jobs.length} jobs`);
-    console.log('🔑 Click "Admin" to manage content');
+    console.log('✅ Treat Talents — Public Edition Loaded');
   </script>
 
 </body>
